@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -37,8 +36,18 @@
 
     <section id="about" class="about">
         <h2 class="section-title" data-aos="fade-up">About Us</h2>
-        <div class="about-container" data-aos="fade-up">
-            <p style="text-align: center; color: var(--text-gray);">We are a team of dedicated developers bringing tech solutions to life.</p>
+        <div class="about-container">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Our Mission</h3>
+                <p>To empower businesses through innovative technology and seamless digital experiences.</p>
+                <h3>Our Vision</h3>
+                <p>To be a global leader in providing sustainable and advanced IT solutions.</p>
+            </div>
+            <div class="about-features" data-aos="fade-left">
+                <div class="feature"><i class="fas fa-check-circle"></i> Quality Driven</div>
+                <div class="feature"><i class="fas fa-check-circle"></i> Customer Centric</div>
+                <div class="feature"><i class="fas fa-check-circle"></i> Innovation First</div>
+            </div>
         </div>
     </section>
 
@@ -55,21 +64,40 @@
                 <h3>App Development</h3>
                 <p>Native and cross-platform mobile applications.</p>
             </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>Protecting your digital assets with advanced security.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Software Dev</h3>
+                <p>Custom software solutions tailored to your needs.</p>
+            </div>
         </div>
     </section>
 
     <section id="portfolio" class="portfolio">
-        <h2 class="section-title" data-aos="fade-up">Projects</h2>
-        <p style="text-align: center;">Coming soon...</p>
+        <h2 class="section-title" data-aos="fade-up">Our Projects</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <h3>Hospital Management System</h3>
+                <p>A digital solution for Migbaresenay Hospital.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>JobApp Platform</h3>
+                <p>Connecting top employers with talented applicants.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">
         <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
         <div class="contact-wrapper">
             <form class="contact-form" data-aos="fade-right">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit" class="btn primary">Send Message</button>
             </form>
             <div class="contact-info" data-aos="fade-left">
@@ -85,5 +113,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script> </body>
+    <script src="script.js"></script>
+</body>
 </html>
