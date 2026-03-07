@@ -205,5 +205,9 @@ section { padding: 100px 10%; }
         display: block !important; /* Ensure the hamburger icon appears */
     }
 }
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px; 
+    background: var
 
 }
