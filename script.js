@@ -5,7 +5,19 @@ AOS.init({
     once: true,
     mirror: false
 });
+function revealSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    
+    // Add the visible class
+    section.classList.add('visible-section');
+    
+    // Scroll smoothly to the now-visible section
+    section.scrollIntoView({ behavior: 'smooth' });
+}
 
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 function toggleProjects() {
     const portfolio = document.getElementById('portfolio');
     
@@ -17,7 +29,6 @@ function toggleProjects() {
         portfolio.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
 
 // Sticky Navbar Background Change on Scroll
 window.addEventListener('scroll', function() {

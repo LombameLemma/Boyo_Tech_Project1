@@ -100,10 +100,7 @@ footer { text-align: center; padding: 40px; background: #020c1b; color: var(--te
     .nav-links li a { margin: 10px 0; display: block; }
     .hero h1 { font-size: 2.5rem; }
     .about-container, .contact-wrapper { flex-direction: column; }
-
 }
-
-
 /* Gallery Layout */
 .image-gallery {
     display: grid;
@@ -173,3 +170,22 @@ footer { text-align: center; padding: 40px; background: #020c1b; color: var(--te
 .gallery-item:hover img { transform: scale(1.1); }
 .overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 212, 255, 0.7); display: flex; justify-content: center; align-items: center; opacity: 0; transition: 0.4s; }
 .gallery-item:hover .overlay { opacity: 1; }
+/* ... keep your reset, navbar, and hero styles ... */
+
+.hidden-section {
+    display: none; /* Hidden by default */
+    padding: 100px 10%;
+    background: var(--second-bg);
+}
+
+.visible-section {
+    display: block !important;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ... gallery and card styles stay the same ... */
