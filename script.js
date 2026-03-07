@@ -5,6 +5,20 @@ AOS.init({
     once: true,
     mirror: false
 });
+<<<<<<< Updated upstream
+=======
+function toggleProjects() {
+    const portfolio = document.getElementById('portfolio');
+    
+    // Toggle the visibility class
+    portfolio.classList.toggle('portfolio-visible');
+    
+    // Scroll to the projects section once it appears
+    if(portfolio.classList.contains('portfolio-visible')) {
+        portfolio.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+>>>>>>> Stashed changes
 
 // Sticky Navbar Background Change on Scroll
 window.addEventListener('scroll', function() {

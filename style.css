@@ -100,4 +100,77 @@ footer { text-align: center; padding: 40px; background: #020c1b; color: var(--te
     .nav-links li a { margin: 10px 0; display: block; }
     .hero h1 { font-size: 2.5rem; }
     .about-container, .contact-wrapper { flex-direction: column; }
+<<<<<<< Updated upstream
 }
+=======
+}
+/* Gallery Layout */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 212, 255, 0.7);
+    display: flex; justify-content: center; align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay span {
+    color: #0a192f;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+/* Previous styles remain the same... */
+
+/* New Logic for Hiding/Showing Sections */
+.portfolio-hidden {
+    display: none; /* This hides the section initially */
+    padding: 100px 10%;
+    background: var(--second-bg);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-visible {
+    display: block !important;
+    opacity: 1;
+}
+
+/* Gallery Styles from before */
+.image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 50px; }
+.gallery-item { position: relative; overflow: hidden; border-radius: 10px; height: 250px; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.gallery-item:hover img { transform: scale(1.1); }
+.overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 212, 255, 0.7); display: flex; justify-content: center; align-items: center; opacity: 0; transition: 0.4s; }
+.gallery-item:hover .overlay { opacity: 1; }
+>>>>>>> Stashed changes
