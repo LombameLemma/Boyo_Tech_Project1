@@ -100,10 +100,10 @@ footer { text-align: center; padding: 40px; background: #020c1b; color: var(--te
     .nav-links li a { margin: 10px 0; display: block; }
     .hero h1 { font-size: 2.5rem; }
     .about-container, .contact-wrapper { flex-direction: column; }
-<<<<<<< Updated upstream
+
 }
-=======
-}
+
+
 /* Gallery Layout */
 .image-gallery {
     display: grid;
@@ -173,4 +173,3 @@ footer { text-align: center; padding: 40px; background: #020c1b; color: var(--te
 .gallery-item:hover img { transform: scale(1.1); }
 .overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 212, 255, 0.7); display: flex; justify-content: center; align-items: center; opacity: 0; transition: 0.4s; }
 .gallery-item:hover .overlay { opacity: 1; }
->>>>>>> Stashed changes

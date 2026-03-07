@@ -5,8 +5,7 @@ AOS.init({
     once: true,
     mirror: false
 });
-<<<<<<< Updated upstream
-=======
+
 function toggleProjects() {
     const portfolio = document.getElementById('portfolio');
     
@@ -18,7 +17,7 @@ function toggleProjects() {
         portfolio.scrollIntoView({ behavior: 'smooth' });
     }
 }
->>>>>>> Stashed changes
+
 
 // Sticky Navbar Background Change on Scroll
 window.addEventListener('scroll', function() {
