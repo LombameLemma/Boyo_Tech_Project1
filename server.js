@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-// Middleware//
+// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
